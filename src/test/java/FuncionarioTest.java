@@ -29,11 +29,11 @@ public class FuncionarioTest {
         
         testGetBonusDiretor();
         
-        //testGetBonusAnalista();
+        testGetBonusAnalista();
         
-        //testGetBonusProgramador();
+        testGetBonusProgramador();
         
-        //testGetBonusAuxiliarDeLimpeza();
+        testGetBonusAuxiliarDeLimpeza();
     }
 
     private void testGetBonusDiretor() {
@@ -63,6 +63,21 @@ public class FuncionarioTest {
         gerente1.setNome("Clovis");
         
         Assert.assertEquals(gerente1.getBonus(), (double)2300);
+    }
+
+    private void testGetBonusAnalista() {
+        Analista analista1 = new Analista();
+        Assert.assertEquals(analista1.getBonus(), (double)1000);
+    }
+
+    private void testGetBonusProgramador() {
+        Programador programador1 = new Programador();
+        Assert.assertEquals(programador1.getBonus(), (double)800);
+    }
+
+    private void testGetBonusAuxiliarDeLimpeza() {
+        AuxiliarDeLimpeza auxLimpeza1 = new AuxiliarDeLimpeza();
+        Assert.assertEquals(auxLimpeza1.getBonus(), (double)500);
     }
     
     
