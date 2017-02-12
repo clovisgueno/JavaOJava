@@ -75,6 +75,9 @@ public class FuncionarioTest {
         Assert.assertEquals(programador1.getBonus(), (double)800);
     }
 
+    /**
+     * Comentario adicionado somente para testes
+     */
     private void testGetBonusAuxiliarDeLimpeza() {
         AuxiliarDeLimpeza auxLimpeza1 = new AuxiliarDeLimpeza();
         Assert.assertEquals(auxLimpeza1.getBonus(), (double)500);
